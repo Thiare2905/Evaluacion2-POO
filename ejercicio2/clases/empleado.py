@@ -1,3 +1,4 @@
+# Clase Empleado (Padre) 
 class Empleado:
     def __init__(self, nombre, rut, sueldo_base, activo=True):
         self.__nombre = nombre
@@ -5,12 +6,15 @@ class Empleado:
         self.__sueldo_base = sueldo_base
         self.__activo = activo
 
+    # Método resumen de la información del empleado
     def resumen(self):
         return f"Nombre: {self.__nombre}|Rut: {self.__rut}|Sueldo base: {self.__sueldo_base}"
     
+    # Método para obtener la remuneración mensual
     def remuneracion_mensual(self):
         return self.__sueldo_base
     
+    # Getters
     def get_rut(self):
         return self.__rut
     
